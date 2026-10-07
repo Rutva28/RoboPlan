@@ -1,0 +1,110 @@
+[
+    {
+        "id": "R01",
+        "conditions": ["weight_high"],
+        "diagnosis": "Possible overweight pallet",
+        "explanation": "Weight sensor is significantly above the normal range."
+    },
+    {
+        "id": "R02",
+        "conditions": ["weight_low"],
+        "diagnosis": "Possible underweight or missing load",
+        "explanation": "Weight sensor is significantly below the expected range."
+    },
+    {
+        "id": "R03",
+        "conditions": ["crack_high"],
+        "diagnosis": "Possible pallet or package crack",
+        "explanation": "Vision sensor detected a high crack severity."
+    },
+    {
+        "id": "R04",
+        "conditions": ["tilt_high"],
+        "diagnosis": "Unsafe pallet tilt",
+        "explanation": "Tilt sensor detected an unsafe orientation."
+    },
+    {
+        "id": "R05",
+        "conditions": ["weight_high", "tilt_high"],
+        "diagnosis": "Overloaded and unstable pallet",
+        "explanation": "High weight combined with high tilt indicates instability."
+    },
+    {
+        "id": "R06",
+        "conditions": ["weight_low", "tilt_high"],
+        "diagnosis": "Unbalanced pallet",
+        "explanation": "Low measured weight combined with high tilt may indicate an unbalanced load."
+    },
+    {
+        "id": "R07",
+        "conditions": ["crack_high", "tilt_high"],
+        "diagnosis": "Structural damage suspected",
+        "explanation": "Crack detection and unsafe tilt occur together."
+    },
+    {
+        "id": "R08",
+        "conditions": ["crack_high", "weight_high"],
+        "diagnosis": "Damaged overloaded package",
+        "explanation": "High crack severity and excessive weight indicate a damaged overloaded package."
+    },
+    {
+        "id": "R09",
+        "conditions": ["motor_current_high"],
+        "diagnosis": "Motor overload suspected",
+        "explanation": "Motor current is higher than the normal operating range."
+    },
+    {
+        "id": "R10",
+        "conditions": ["wheel_slip"],
+        "diagnosis": "Wheel traction problem",
+        "explanation": "Wheel slip was detected during robot movement."
+    },
+    {
+        "id": "R11",
+        "conditions": ["motor_current_high", "wheel_slip"],
+        "diagnosis": "Drive system problem",
+        "explanation": "High motor current together with wheel slip suggests a drive-system issue."
+    },
+    {
+        "id": "R12",
+        "conditions": ["battery_low"],
+        "diagnosis": "Low battery",
+        "explanation": "Battery level is below the safe operating threshold."
+    },
+    {
+        "id": "R13",
+        "conditions": ["battery_low", "motor_current_high"],
+        "diagnosis": "Battery drain risk",
+        "explanation": "Low battery combined with high motor current can cause rapid battery depletion."
+    },
+    {
+        "id": "R14",
+        "conditions": ["temperature_high"],
+        "diagnosis": "Robot temperature warning",
+        "explanation": "Robot temperature is above the recommended operating range."
+    },
+    {
+        "id": "R15",
+        "conditions": ["temperature_high", "motor_current_high"],
+        "diagnosis": "Motor overheating risk",
+        "explanation": "High temperature and high motor current indicate possible motor overheating."
+    },
+    {
+        "id": "R16",
+        "conditions": ["obstacle_detected"],
+        "diagnosis": "Path obstruction",
+        "explanation": "An obstacle is blocking the planned robot path."
+    },
+    {
+        "id": "R17",
+        "conditions": ["obstacle_detected", "wheel_slip"],
+        "diagnosis": "Navigation difficulty",
+        "explanation": "An obstacle combined with wheel slip can prevent safe navigation."
+    },
+    {
+        "id": "R18",
+        "conditions": ["crack_high", "tilt_high", "weight_high"],
+        "diagnosis": "CRITICAL: pallet damage and instability",
+        "explanation": "Crack, tilt and excessive weight are simultaneously detected."
+    }
+]
